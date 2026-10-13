@@ -1,0 +1,12 @@
+id: "mysql"
+name: "MySQL 8.0"
+category: "database"
+description: "Реляционная база данных"
+default_image: "mysql:8.0"
+default_port: 3306
+target_port: 3306
+env:
+  MYSQL_ROOT_PASSWORD: "root"
+  MYSQL_DATABASE: "app_db"
+volumes:
+  - "db_data:/var/lib/mysql"

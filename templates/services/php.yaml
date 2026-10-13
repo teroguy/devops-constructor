@@ -1,0 +1,9 @@
+id: "php"
+name: "PHP 8.2 (Apache)"
+category: "backend"
+description: "Веб-сервер Apache + PHP. Код монтируется в ./src"
+default_image: "php:8.2-apache"
+default_port: 8080
+target_port: 80
+volumes:
+  - "./src:/var/www/html"
